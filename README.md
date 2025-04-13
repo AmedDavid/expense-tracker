@@ -1,6 +1,6 @@
 # Expense Tracker
 
-![Expense Tracker Screenshot](screenshot.png) *(You can add a screenshot of the app here after deployment)*
+![Expense Tracker Screenshot](image.png)
 
 ## Overview
 
