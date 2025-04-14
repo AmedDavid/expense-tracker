@@ -1,0 +1,17 @@
+/* My Custom animation for the sun/moon toggle */
+@keyframes rotateSunMoon {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .sun-moon {
+    transition: all 0.3s ease;
+  }
+  
+  .sun-moon:hover {
+    animation: rotateSunMoon 1s infinite linear;
+  }
