@@ -4,29 +4,29 @@
 
 ## Overview
 
-Expense Tracker is a React-based web application built as part of a Phase 2 code challenge to demonstrate proficiency in React, state management, component-based architecture, and UI/UX design. The app allows users to manage their expenses by adding, viewing, searching, sorting, and deleting expense records. It is styled with Tailwind CSS to match a provided design mockup and deployed on Vercel for accessibility.
+This is my Expense Tracker project for the Phase 2 code challenge. I built this app using React and Tailwind CSS, and I tried to make it as user-friendly and visually appealing as possible. The app lets you manage your expenses by adding, searching, sorting, and deleting them. I also added a cool dark/light mode toggle feature with a fun animation to make the app stand out!
 
 ---
 
 ## Features
 
-- **View Expenses**: Displays a table of all expenses with columns for Description, Category, Amount, and Date.
-- **Add Expenses**: Users can fill out a form to add new expenses, which are immediately reflected in the table without a page refresh.
-- **Search Functionality**: A search bar filters expenses by description or category in real-time.
-- **Sort Expenses**: Users can sort the table alphabetically by clicking on the "Description" or "Category" headers (advanced deliverable).
-- **Delete Expenses**: Each expense row includes a "Delete" button to remove it from the table (advanced deliverable).
-- **Responsive UI/UX**: Styled with Tailwind CSS to match the provided mockup, ensuring a clean, user-friendly, and responsive design.
-- **Deployment**: Hosted on Vercel for easy access and sharing.
+- **View Expenses** - Displays a table of all expenses with columns for Description, Category, Amount, and Date.
+- **Add Expenses** - Users can fill out a form to add new expenses, which are immediately reflected in the table without a page refresh.
+- **Search Functionality** - A search bar filters expenses by description or category in real-time.
+- **Sort Expenses** - Users can sort the table alphabetically by clicking on the "Description" or "Category" headers (advanced deliverable).
+- **Delete Expenses** - Each expense row includes a "Delete" button to remove it from the table (advanced deliverable).
+- **Responsive UI/UX** - Styled with Tailwind CSS to match the provided mockup, ensuring a clean, user-friendly, and responsive design.
+- **Deployment** - Hosted on Vercel for easy access and sharing.
 
 ---
 
 ## Tech Stack
 
-- **Frontend Framework**: React (using Vite as the build tool)
-- **Styling**: Tailwind CSS (version 3) with PostCSS and Autoprefixer
-- **State Management**: React's `useState` hook
-- **Deployment**: Vercel
-- **Version Control**: Git and GitHub
+- **Frontend Framework** - React (using Vite as the build tool)
+- **Styling** - Tailwind CSS (version 3) with PostCSS and Autoprefixer
+- **State Management** - React's `useState` hook
+- **Deployment** - Vercel
+- **Version Control** - Git and GitHub
 
 ---
 
@@ -40,25 +40,28 @@ expense-tracker/
 │   ├── assets/
 │   │   └── react.svg
 │   ├── components/
-│   │   ├── ExpenseForm.jsx    # Form component for adding expenses
-│   │   ├── ExpenseTable.jsx   # Table component for displaying expenses
-│   │   └── SearchBar.jsx      # Search bar component for filtering expenses
-│   ├── App.jsx                # Main app component with state management
+│   │   ├── AddExpenseWidget.jsx  (the form for adding expenses)
+│   │   ├── ExpenseListDisplay.jsx  (the table that shows expenses)
+│   │   ├── SearchFilter.jsx  (the search bar for filtering expenses)
+│   │   └── ThemeToggler.jsx  (my custom dark/light mode toggle)
+│   ├── styles/
+│   │   └── custom.css  (for the sun/moon animation)
+│   ├── App.jsx  (main component that ties everything together)
 │   ├── App.css
-│   ├── index.css              # Tailwind CSS directives
-│   └── main.jsx               # Entry point for the React app
+│   ├── index.css
+│   └── main.jsx
 ├── index.html
 ├── package.json
 ├── tailwind.config.js
 ├── postcss.config.js
 ├── vite.config.js
-├── README.md
+├── README.md  (this file!)
 └── .gitignore
 ```
 
-- **Components**: Separated into reusable components (`ExpenseForm`, `ExpenseTable`, `SearchBar`) for modularity.
-- **State Management**: Centralized in `App.jsx` using `useState` for expenses, search term, and sorting.
-- **Styling**: Tailwind CSS is configured to apply utility classes across all components.
+- **Components** - Separated into reusable components (`ExpenseForm`, `ExpenseTable`, `SearchBar`) for modularity.
+- **State Management** - Centralized in `App.jsx` using `useState` for expenses, search term, and sorting.
+- **Styling** - Tailwind CSS is configured to apply utility classes across all components.
 
 ---
 
@@ -162,9 +165,9 @@ During the development of this project, I encountered a few challenges, particul
 
 ## Future Improvements
 
-- **Persistence**: Add local storage or a backend to persist expenses between sessions.
-- **Enhanced Sorting**: Allow sorting in ascending and descending order.
-- **Edit Functionality**: Enable users to edit existing expenses.
-- **Improved Styling**: Add animations or transitions for a smoother user experience.
+- **Persistence** - Add local storage or a backend to persist expenses between sessions.
+- **Enhanced Sorting** - Allow sorting in ascending and descending order.
+- **Edit Functionality** - Enable users to edit existing expenses.
+- **Improved Styling** - Add animations or transitions for a smoother user experience.
 
 ---
